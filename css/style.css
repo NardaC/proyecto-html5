@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Raleway&display=swap');
+*{
+	box-sizing: border-box;
+}
+
+html
+{
+    font-size: .94vw;
+    font-family: 'Raleway', sans-serif;
+}
+
+body{
+    font-size: 1rem;
+}
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 92;
+    top: 0;
+    left: 0;
+}
+header .container{
+    display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+    justify-content: space-between;
+    padding: 2rem
+}
+
+header .logo{
+    width: 15rem;
+    height: auto;
+    animation-name: saltarin;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-delay: .5s;
+	animation-direction: alternate-reverse;
+}
+header .burger-menu{
+    color: white;
+    font-size: 2rem;
+}
+header .menu nav div ul a{
+    color: white;
+    font-family: 'MyriadPro-It';
+    font-size: 1.5rem
+}
+
+header a{
+    text-decoration: none;
+    color: white
+}
+.home{
+    position: relative;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    width: 80%;
+}
+.container-full{
+	width: 100%;
+}
+
+.fila
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+	margin-right: -1rem;
+	margin-left: -1rem;
+}
+
+.columna
+{
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+.columna-50{
+    width: 50%;
+}
+.columna-25{
+    width: 25%;
+}
+.home{
+	height: 100vh;
+}
+
+.home picture .fondo{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.home .columna {
+    color: white;
+    position: relative;
+    z-index: 4;
+    margin: 0 auto
+}
+.home .container{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+}
+.home .circle{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color:#f7ca4c; 
+    animation-name: mover;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-delay: .5s;
+	animation-direction: alternate-reverse;	
+}
+.home .aa{
+    width: 3rem;
+    animation-name: mover;
+    animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-delay: .5s;
+	animation-direction: alternate-reverse;
+}
+
+@keyframes saltarin
+{
+    0% {
+        transform: scale(0.95);
+      }
+      15% {
+        transform: scale(1.1);
+      }
+      30% {
+        transform: scale(0.90);
+      }
+      45% {
+        transform: scale(1);
+      }
+      60% {
+        transform: scale(0.90);
+      }
+      75% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(0.95);
+      }
+    
+}
+@keyframes mover {
+    0% {
+        left:0; 
+        top:0;
+    }
+    50% {
+        left: 100%;
+        top: 0%;
+        transform: translate(-100%,0);
+    }
+    100% {
+        left:0; 
+        top:0;
+    }
+  }
+
+.home .container .columna h1{
+    margin-top: 0; 
+    font-family: 'Dancing Script', cursive;
+	font-size: 3rem;
+	position: relative;
+    padding: 3rem;
+    text-align: center
+}
+ .home .container .columna button{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-yellow{
+    background-color: #068399;
+    border-color: #f7ca4c;
+    color: #fff;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    padding: 0.9rem;
+    width: 10rem;
+}
+
+.opciones{
+    z-index: 2;
+    background-color:rgba(3, 46, 90, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.opciones .contenedor-botones{
+
+    margin: 0 auto;
+}
+.opciones .btn-corona{
+    background-color: #f7ca4c;
+    color: #002945;
+    font-size: 1.5rem;
+    padding: 2.4rem;
+    width: 49%;
+    border: none;
+}
+.opciones .btn-paradise{
+    background-color: #002945;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 2.4rem;
+    width: 50%;
+    border: none;
+}
+.w-100{
+    width: 100%
+}
+.vista2{
+    /* background-color: #e7f7ba70 */
+    background-image: url(../images/89210.jpg);
+    background-size: contain;
+    /* background-repeat: no-repeat */
+    padding-bottom: 3rem
+}
+.vista2 .box-center{
+    justify-content: center;
+}
+.vista2 .box-title{
+    background-color:#fff; 
+    margin-bottom: 3rem;
+    margin-top: 4rem;
+}
+.box-title h3{
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+
+}
+.vista2 h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #2b3514
+}
+
+.btn-yellow:hover{
+    box-shadow: 0 4px 16px rgb(231, 220, 69);
+    transition: all 0.2s ease;
+}
+.vista2 .card{
+    background-color: #fff;
+    padding: 3rem;
+    font-size: 1.5rem;
+    text-align: justify;
+    line-height: 2rem;
+    border: 1px solid #aaa;
+}
+.vista2 .card h4{
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    color: #2b3514
+}
+.vista2 .contenido-info p{
+    color: #021c42;
+}
+.contenedor-formulario{
+    padding: 4rem;
+    margin: 0 auto;
+}
+.contenedor-formulario h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    color: #2b3514;
+    background-color: #fff;
+    padding: .5rem
+}
+.contacto{
+    background-image: url(../images/aaa.png);
+    background-size: cover;
+}
+.contenedor-formulario, .btn-form{
+    text-align: center
+}
+form{
+    width: 50rem;
+}
+
+.form-contenedor{
+    margin-bottom: .7rem;
+}
+.form-contenedor textarea{
+    text-align: left
+}
+.form-control{
+	height: 4rem;
+	padding: .33rem;
+	width: 100%;
+}
+ .redes{
+    background-color: #068299;
+    height: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+   
+}
+.redes .container{
+    display: flex;
+    justify-content: space-around;
+}
+.redes a{
+    color: #fff;
+    font-size: 3rem;
+} 
+.more:hover{
+    transform: scale(1.5) rotate(5deg); 
+}
+
+footer{
+    height: 20rem;
+    background-color: #f7ca4c;
+}
+@media (max-width: 767px) {
+	html{
+		font-size: 4.6vw;
+    }
+    body{
+        font-size: 1rem;
+    }
+    .columna-50{
+        width: 100%
+    }
+    .container, .contenedor-formulario, form, textarea{
+        width: 100%
+    }
+    contenedor-info {
+	    margin-bottom: 2rem;
+    }
+    header .logo{
+        width: 8rem
+    }
+    header .ocultar-mobile{
+        display: none;
+    }
+    h1{
+        font-size: 2rem
+    }
+    .vista2 .card{
+        margin-bottom: 2rem
+    }
+    .vista2 h2{
+        font-size: 1.5rem;
+    }
+    .vista2 .card h4{
+        font-size: 1.4rem;
+    }
+    .vista2 .contenido-info p{
+        font-size: 1rem;
+    }
+    .redes a{
+        font-size: 1.5rem
+    }
+    .box-title h3{
+        font-size: 1rem
+    }
+    .contenido-info a{
+        font-size: 1.4rem
+    }
+}
