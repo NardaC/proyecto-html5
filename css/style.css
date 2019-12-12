@@ -230,6 +230,9 @@ header a{
 .w-100{
     width: 100%
 }
+.w-50{
+    width: 50%
+}
 .vista2{
     /* background-color: #e7f7ba70 */
     background-image: url(../images/89210.jpg);
@@ -250,10 +253,11 @@ header a{
     font-family: 'Raleway', sans-serif;
 
 }
-.vista2 h2{
+.vista2 h2, .banner h2{
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
-    color: #2b3514
+    color: #2b3514;
+    text-align: center
 }
 
 .btn-yellow:hover{
@@ -327,7 +331,13 @@ form{
 .more:hover{
     transform: scale(1.5) rotate(5deg); 
 }
-
+.banner{
+    text-align: center;
+    padding: 5rem 0
+}
+.banner p{
+    font-size: 1.5rem;
+}
 footer{
     height: 20rem;
     background-color: #f7ca4c;
